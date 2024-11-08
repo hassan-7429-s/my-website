@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('eye.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    text-align: right;
+}
+
+.login-container, .welcome-container {
+    background: #fff;
+    padding: 40px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+h2, h1 {
+    color: #333;
+    margin-bottom: 20px;
+    background-color: red;
+    padding-left: 100%;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-bottom-color: #6e8efb;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #aaa;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: #6e8efb;
+}
+
+.login-btn, .logout-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #6e8efb;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover, .logout-btn:hover {
+    background: #5a73e5;
+}
+
+.welcome-container {
+    opacity: 0;
+    transform: scale(0.9);
+    display: none;
+}
+
+/* Show welcome container after login */
+.show-welcome .login-container {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.show-welcome .welcome-container {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}

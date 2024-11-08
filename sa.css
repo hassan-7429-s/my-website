@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.logo span {
+    font-weight: bold;
+    color: #FFD700; /* Gold */
+}
+
+.address-input {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.address-input input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.address-input button {
+    padding: 10px;
+    background-color: #FFD700; /* Gold */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+}
+
+.description {
+    max-width: 500px;
+}
+
+.description ul {
+    margin-top: 10px;
+}
+
+.video-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-section h2 {
+    color: #007BFF;
+}
+
+.image-gallery {
+    text-align: center;
+}
+
+.image-gallery h2 {
+    margin-bottom: 10px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.images img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.contact {
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    margin: 0;
+}
